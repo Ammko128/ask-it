@@ -1,0 +1,15 @@
+.home-wrapper {
+  width: 100%;
+  .new-question {
+    border-radius: 10px;
+    border: solid 1px #ccc;
+    color: #ccc;
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    .rdw-editor-wrapper {
+      margin: 20px;
+      border: solid 1px #ccc;
+    }
+  }
+}

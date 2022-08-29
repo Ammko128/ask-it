@@ -1,0 +1,50 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  .btn-primary {
+    --bs-btn-bg: #77c;
+    --bs-btn-border-color: #55f;
+    --bs-btn-hover-bg: #55f;
+    --bs-btn-hover-border-color: #77c;
+    --bs-btn-focus-shadow-rgb: 39, 112, 213;
+    --bs-btn-disabled-bg: #77c;
+    --bs-btn-disabled-border-color: #55f;
+  }
+  .btn-danger {
+    --bs-btn-bg: #982c36;
+    --bs-btn-border-color: #781c16;
+    --bs-btn-hover-bg: #781c16;
+    --bs-btn-hover-border-color: #982c36;
+  }
+  .btn-warning {
+    --bs-btn-bg: #cfb211;
+    --bs-btn-border-color: #efd211;
+    --bs-btn-hover-bg: #efd211;
+    --bs-btn-hover-border-color: #cfb211;
+    --bs-btn-color: #444;
+    --bs-btn-hover-color: #444;
+  }
+  margin: 0;
+  a {
+    color: inherit;
+  }
+  div[required] .form-label::before {
+    content: '* ';
+    color: red;
+  }
+  .nav-tabs {
+    border-bottom-color: #000;
+    .nav-item {
+      margin-right: 10px;
+      .nav-link {
+        color: #55f;
+        background-color: #999;
+        border-color: #000;
+        &.active {
+          background-color: #eee;
+          color: #77c;
+        }
+      }
+    }
+  }
+}

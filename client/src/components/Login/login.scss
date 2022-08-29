@@ -1,0 +1,10 @@
+.login-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  .login-form {
+    width: 35%;
+  }
+}

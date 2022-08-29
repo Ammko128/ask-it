@@ -1,0 +1,18 @@
+.profile-wrapper {
+  width: 100%;
+  .profile-info,
+  .user-edit-form,
+  .change-password-form {
+    .attribute {
+      display: flex;
+      margin-bottom: 5px;
+      .label {
+        margin-right: 10px;
+      }
+    }
+    button {
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+  }
+}

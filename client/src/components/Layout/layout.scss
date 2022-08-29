@@ -1,0 +1,110 @@
+.app-layout {
+  display: flex;
+  .content {
+    width: calc(100% - 260px);
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    background-color: #ccc;
+    overflow-y: scroll;
+    height: 100vh;
+    .load-more-button {
+      margin-bottom: 20px;
+      width: 500px;
+      height: 50px;
+      align-self: center;
+    }
+  }
+  .sidebar {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: #444;
+    .navlinks-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-link,
+    .logout-button,
+    .notifications-button {
+      margin: auto;
+      width: 200px;
+      border-radius: 10px;
+      border: solid 1px #000;
+      padding: 10px;
+      text-align: center;
+      margin: 10px 0;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #999;
+      &:hover {
+        background-color: #aaa;
+      }
+      &.active,
+      &.open {
+        background-color: #fff;
+      }
+      svg {
+        margin-right: 5px;
+        height: 100%;
+      }
+      .notifications-count, .messages-count {
+        font-size: 12px;
+        background-color: #982c36;
+        color: #fff;
+        border-radius: 50%;
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        &.has-notifications, &.has-messages {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+.notifications-wrapper {
+  max-width: 400px;
+  min-width: 150px;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  color: #55f;
+  a {
+    border-radius: 10px;
+    border: solid 1px #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    color: #77c;
+    font-weight: 600;
+    &:hover {
+      color: #55f;
+    }
+  }
+  .created-at {
+    font-size: 12px;
+    color: #eee;
+    text-decoration-color: transparent;
+  }
+}
+#popover-contained {
+  background-color: #222;
+  border: solid 2px #55f;
+  .popover-arrow {
+    &:after {
+      border-right-color: #222;
+    }
+    &:before {
+      border-right-color: #55f;
+    }
+  }
+}
